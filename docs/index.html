@@ -13,8 +13,8 @@
 		new daum.Postcode({
 			oncomplete: function(data) {
 				window.PostAddrDialog.onPostAddressResult(data.zonecode,
-					data.autoRoadAddress + " " + data.buildingName,
-					data.autoJibunAddress + " " + data.buildingName);
+					data.roadAddress + " " + data.buildingName,
+					data.jibunAddress + " " + data.buildingName);
 			},
 			onresize : function(size) {
 				element_wrap.style.height = size.height+'px';
